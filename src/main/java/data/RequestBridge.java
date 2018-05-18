@@ -1,18 +1,8 @@
 package data;
 
-public class RequestBridge<T> {
+public class RequestBridge<T, U> {
     private String responseId;
-    private QueryResultBridge<T> queryResult;
+    private QueryResultBridge<T, U> queryResult;
     private OriginalDetectIntentRequest originalDetectIntentRequest;
     private String session;
-
-    public RequestBridge() {
-        super();
-    }
-
-    public RequestBridge(String responseId, QueryResultBridge<T> queryResult, String session) {
-        this.responseId = responseId;
-        this.queryResult = queryResult;
-        this.session = session;
-    }
 }

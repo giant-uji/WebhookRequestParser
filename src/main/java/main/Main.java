@@ -6,6 +6,7 @@ import com.google.gson.reflect.TypeToken;
 import data.QueryResultBridge;
 import data.RequestBridge;
 import data.Valor;
+import data.ValorOriginal;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -25,7 +26,7 @@ public class Main {
 
 
         Type listType = new TypeToken<ArrayList<RequestBridge>>(){}.getType();
-        Type type = new TypeToken<RequestBridge<Valor>>(){}.getType();
+        Type type = new TypeToken<RequestBridge<Valor, ValorOriginal>>(){}.getType();
 //        List<YourClass> yourClassList = new Gson().fromJson(jsonArray, listType);
 
 //        RequestBridge request = gson.fromJson(reader, RequestBridge.class);

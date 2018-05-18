@@ -1,6 +1,6 @@
 package data;
 
-public class OutputContext {
+public class OutputContext<U> {
     private String name;
-    private ValorOriginal parameters;
+    private U parameters;
 }
