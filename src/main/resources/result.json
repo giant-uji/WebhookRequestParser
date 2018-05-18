@@ -1,0 +1,115 @@
+{
+  "responseId": "7aec60ad-9c4d-4596-8e55-de60a3d1a5cb",
+  "queryResult": {
+    "queryText": "cinco",
+    "action": "alegre",
+    "parameters": {
+      "valor": "cinco"
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "Hola",
+    "fulfillmentMessages": [
+      {
+      "text": {
+        "text": [
+            "Hola"
+        ]
+        }
+      }
+    ],
+    "outputContexts": [{
+      "name": "projects/salud-8039a/agent/sessions/1525426268538/contexts/actions_capability_screen_output",
+      "parameters": {
+        "valor.original": "cinco",
+        "valor": "cinco"
+      }
+    }, {
+      "name": "projects/salud-8039a/agent/sessions/1525426268538/contexts/cachis",
+      "lifespanCount": 5,
+      "parameters": {
+        "valor.original": "cinco",
+        "valor": "cinco"
+      }
+    }, {
+      "name": "projects/salud-8039a/agent/sessions/1525426268538/contexts/actions_capability_audio_output",
+      "parameters": {
+        "valor.original": "cinco",
+        "valor": "cinco"
+      }
+    }, {
+      "name": "projects/salud-8039a/agent/sessions/1525426268538/contexts/google_assistant_input_type_keyboard",
+      "parameters": {
+        "valor.original": "cinco",
+        "valor": "cinco"
+      }
+    }, {
+      "name": "projects/salud-8039a/agent/sessions/1525426268538/contexts/actions_capability_web_browser",
+      "parameters": {
+        "valor.original": "cinco",
+        "valor": "cinco"
+      }
+    }, {
+      "name": "projects/salud-8039a/agent/sessions/1525426268538/contexts/actions_capability_media_response_audio",
+      "parameters": {
+        "valor.original": "cinco",
+        "valor": "cinco"
+      }
+    }],
+    "intent": {
+      "name": "projects/salud-8039a/agent/intents/b1a971e1-82ad-45ca-9dcd-6b90b5db6b55",
+      "displayName": "Alegre"
+    },
+    "intentDetectionConfidence": 1.0,
+    "diagnosticInfo": {
+    },
+    "languageCode": "es-es"
+  },
+  "originalDetectIntentRequest": {
+    "source": "google",
+    "version": "2",
+    "payload": {
+      "isInSandbox": true,
+      "surface": {
+        "capabilities": [{
+          "name": "actions.capability.AUDIO_OUTPUT"
+        }, {
+          "name": "actions.capability.SCREEN_OUTPUT"
+        }, {
+          "name": "actions.capability.MEDIA_RESPONSE_AUDIO"
+        }, {
+          "name": "actions.capability.WEB_BROWSER"
+        }]
+      },
+      "inputs": [{
+        "rawInputs": [{
+          "query": "cinco",
+          "inputType": "KEYBOARD"
+        }],
+        "arguments": [{
+          "rawText": "cinco",
+          "textValue": "cinco",
+          "name": "text"
+        }],
+        "intent": "actions.intent.TEXT"
+      }],
+      "user": {
+        "lastSeen": "2018-05-04T09:28:35Z",
+        "locale": "es-ES",
+        "userId": "ABwppHGBnoG8dacPpXrlGG_p82LP5L6Rx_LkHi630IHPYLM8f4jjIY4oTjAKosVonQjl4Nox50J7oeI"
+      },
+      "conversation": {
+        "conversationId": "1525426268538",
+        "type": "ACTIVE",
+        "conversationToken": "[]"
+      },
+      "availableSurfaces": [{
+        "capabilities": [{
+          "name": "actions.capability.AUDIO_OUTPUT"
+        }, {
+          "name": "actions.capability.SCREEN_OUTPUT"
+        }]
+      }]
+    }
+  },
+  "session": "projects/salud-8039a/agent/sessions/1525426268538"
+}
