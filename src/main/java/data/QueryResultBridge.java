@@ -1,9 +1,10 @@
 package data;
 
-import com.google.gson.annotations.SerializedName;
+import lombok.Data;
 
 import java.util.List;
 
+@Data
 public class QueryResultBridge<T, U> {
     private String queryText;
     private String action;

@@ -1,7 +1,10 @@
 package data;
 
+import lombok.Data;
+
 import java.util.List;
 
+@Data
 public class Payload {
     private boolean isInSandbox;
     private Surface surface;

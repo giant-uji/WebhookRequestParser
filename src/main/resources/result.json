@@ -21,7 +21,8 @@
       "name": "projects/salud-8039a/agent/sessions/1525426268538/contexts/actions_capability_screen_output",
       "parameters": {
         "valor.original": "cinco",
-        "valor": "cinco"
+        "valor": "cinco",
+        "hola": "hola"
       }
     }, {
       "name": "projects/salud-8039a/agent/sessions/1525426268538/contexts/cachis",

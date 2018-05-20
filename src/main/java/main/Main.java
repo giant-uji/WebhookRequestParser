@@ -22,10 +22,10 @@ public class Main {
         File file = Paths.get("src/main/resources/result.json").toFile();
         Reader reader = new FileReader(file);
 
-
         Type type = new TypeToken<RequestBridge<Valor, ValorOriginal>>(){}.getType();
 
         RequestBridge request = gson.fromJson(reader, type);
-        System.out.println(gson.toJson(request));
+//        System.out.println(gson.toJson(request));
+        System.out.println(request.getOriginalDetectIntentRequest().getPayload().getUser().getUserId());
     }
 }
