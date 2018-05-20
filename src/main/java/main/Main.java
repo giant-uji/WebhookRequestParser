@@ -4,8 +4,8 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 import data.RequestBridge;
-import data.Valor;
-import data.ValorOriginal;
+import dialog.Valor;
+import dialog.ValorOriginal;
 
 import java.io.File;
 import java.io.FileNotFoundException;
