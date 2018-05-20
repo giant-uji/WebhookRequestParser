@@ -3,8 +3,6 @@ package data;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
-import dialog.Valor;
-import dialog.ValorOriginal;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -19,7 +17,7 @@ import static org.hamcrest.MatcherAssert.*;
 import static org.hamcrest.core.Is.*;
 
 public class UserTest {
-    private static RequestBridge<Valor, ValorOriginal> request;
+    private static RequestBridge request;
 
     @BeforeAll
     public static void setUp() throws FileNotFoundException {
@@ -27,9 +25,7 @@ public class UserTest {
         File file = Paths.get("src/main/resources/result.json").toFile();
         Reader reader = new FileReader(file);
 
-        Type type = new TypeToken<RequestBridge<Valor, ValorOriginal>>(){}.getType();
-
-        request = gson.fromJson(reader, type);
+        request = gson.fromJson(reader, RequestBridge.class);
     }
 
     @Test
