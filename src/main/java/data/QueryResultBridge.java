@@ -1,10 +1,7 @@
 package data;
 
-import lombok.Data;
-
 import java.util.List;
 
-@Data
 public class QueryResultBridge<T, U> {
     private String queryText;
     private String action;
@@ -17,4 +14,52 @@ public class QueryResultBridge<T, U> {
     private double intentDetectionConfidence;
     private Object diagnosticInfo;
     private String languageCode;
+
+    public QueryResultBridge() {
+        super();
+    }
+
+    public String getQueryText() {
+        return queryText;
+    }
+
+    public String getAction() {
+        return action;
+    }
+
+    public T getParameters() {
+        return parameters;
+    }
+
+    public boolean isAllRequiredParamsPresent() {
+        return allRequiredParamsPresent;
+    }
+
+    public String getFulfillmentText() {
+        return fulfillmentText;
+    }
+
+    public List<FulfillmentMessages> getFulfillmentMessages() {
+        return fulfillmentMessages;
+    }
+
+    public List<OutputContext<U>> getOutputContexts() {
+        return outputContexts;
+    }
+
+    public Intent getIntent() {
+        return intent;
+    }
+
+    public double getIntentDetectionConfidence() {
+        return intentDetectionConfidence;
+    }
+
+    public Object getDiagnosticInfo() {
+        return diagnosticInfo;
+    }
+
+    public String getLanguageCode() {
+        return languageCode;
+    }
 }

@@ -1,10 +1,15 @@
 package data;
 
-import lombok.Data;
-
 import java.util.List;
 
-@Data
 public class AvailableSurface {
     List<Capability> capabilities;
+
+    public AvailableSurface() {
+        super();
+    }
+
+    public List<Capability> getCapabilities() {
+        return capabilities;
+    }
 }

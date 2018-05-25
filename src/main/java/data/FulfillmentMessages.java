@@ -1,8 +1,13 @@
 package data;
 
-import lombok.Data;
-
-@Data
 public class FulfillmentMessages {
     private Text text;
+
+    public FulfillmentMessages() {
+        super();
+    }
+
+    public Text getText() {
+        return text;
+    }
 }

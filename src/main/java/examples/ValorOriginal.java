@@ -1,11 +1,21 @@
-package examples;
+package es.uji.giant.example;
 
-import com.google.gson.annotations.SerializedName;
-import lombok.Data;
+import javax.xml.bind.annotation.XmlElement;
 
-@Data
 public class ValorOriginal {
-    @SerializedName("valor.original")
+    @XmlElement(name = "valor.original")
     private String valorOriginal;
     private String valor;
+
+    public ValorOriginal() {
+        super();
+    }
+
+    public String getValorOriginal() {
+        return valorOriginal;
+    }
+
+    public String getValor() {
+        return valor;
+    }
 }
