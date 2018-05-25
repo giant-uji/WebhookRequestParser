@@ -1,4 +1,4 @@
-package es.uji.giant.example;
+package examples;
 
 import javax.xml.bind.annotation.XmlElement;
 

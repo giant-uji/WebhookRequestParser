@@ -1,4 +1,4 @@
-package es.uji.giant.example;
+package examples;
 
 public class Valor {
     private String valor;
