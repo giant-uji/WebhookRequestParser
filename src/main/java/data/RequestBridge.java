@@ -7,6 +7,7 @@ public class RequestBridge<T, U> {
     private QueryResultBridge<T, U> queryResult;
     private OriginalDetectIntentRequest originalDetectIntentRequest;
     private String session;
+    private WebhookStatus webhookStatus;
 
     public RequestBridge() {
         super();
